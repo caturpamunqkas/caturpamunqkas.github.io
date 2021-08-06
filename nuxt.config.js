@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'dev_resume',
+    title: 'Catur Pamungkas',
     htmlAttrs: {
       lang: 'en'
     },

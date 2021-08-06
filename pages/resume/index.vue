@@ -123,6 +123,11 @@
 </template>
 <script>
 export default {
+    head() {
+        return {
+            title: "Resume - Catur Pamungkas"
+        }
+    },
     data() {
         return {
             

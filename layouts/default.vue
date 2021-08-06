@@ -19,7 +19,7 @@
 				    <div class="sidebar box shadow pb-0 sticky-column">
 						<svg class="avatar avatar--180" viewBox="0 0 188 188">
                             <g class="avatar__box">
-                                <image xlink:href="/assets/img/avatar.png" height="100%" width="100%" />
+                                <image xlink:href="/assets/img/avatar-new.jpeg" height="100%" width="100%" />
                             </g>
                         </svg>
 						<div class="text-center">
@@ -28,10 +28,10 @@
 							
 							<!-- Social -->
 		                    <div class="social">
-		                        <a class="social__link" href="https://www.facebook.com/"><i class="font-icon icon-facebook"></i></a>
-		                        <a class="social__link" href="https://www.behance.com/"><i class="font-icon icon-twitter"></i></a>
-		                        <a class="social__link" href="https://www.linkedin.com/"><i class="font-icon icon-linkedin2"></i></a>
-		                        <a class="social__link" href="https://www.linkedin.com/"><i class="font-icon icon-instagram"></i></a>
+		                        <a class="social__link" href="javascript:void(0)"><i class="font-icon icon-facebook"></i></a>
+		                        <a class="social__link" href="javascript:void(0)"><i class="font-icon icon-twitter"></i></a>
+		                        <a class="social__link" href="https://www.linkedin.com/in/caturpamungkas/"><i class="font-icon icon-linkedin2"></i></a>
+		                        <a class="social__link" href="javascript:void(0)"><i class="font-icon icon-instagram"></i></a>
 		                    </div>
 						</div>
 						
@@ -44,10 +44,10 @@
 							        <i class="font-icon icon-location"></i>Surabaya
 							    </li>
 						        <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="E-mail">
-							        <a href="mailto:example@mail.com"><i class="font-icon icon-envelope"></i>a.n.caturpamungkas@gmail.com</a>
+							        <a href="mailto:a.n.caturpamungkas@gmail.com"><i class="font-icon icon-envelope"></i>a.n.caturpamungkas@gmail.com</a>
 							    </li>
 						        <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Phone">
-							        <i class="font-icon icon-phone"></i>+6285855226808
+							        <i class="font-icon icon-phone"></i>+6285*****6808
 							    </li>
 						        <!-- <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Skype">
 							        <a href="skype:skype-example"><i class="font-icon icon-skype"></i>Felecia_Brown</a>

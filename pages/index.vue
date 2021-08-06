@@ -3,8 +3,11 @@
 		<!-- About -->
 		<div class="pb-0 pb-sm-2">
 			<h1 class="title title--h1 first-title title__separate">About Me</h1>
-			<p>I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.</p>
-			<p>My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.</p>
+			<p>
+				Saya Achmad Novanto Catur Pamungkas, sudah menekuni di bidang Fullstack Developer selama 2 Tahun. Sejak tahun 2019 hingga sekarang, untuk project yag sering saya kerjakan yaitu Web Application menggunakan Framework Laravel + NuxtJS.
+			</p>
+			<p> Namun, sering beberapa kali juga menggunakan Codeigniter. Untuk Mobile Development, saya cukup mahir untuk Android Java basic (Belum Memiliki Struktur MVVM) dan flutter. Saya tipikal orang yang senang untuk mempelajari hal - hal baru, mampu bersosialisasi dengan baik, dan juga mampu bekerja dibawah tekanan.
+			</p>
 		</div>
 		
 		<!-- What -->
@@ -56,52 +59,17 @@
 				</div>
 			</div>	
 		</div>
-		
-		<!-- Clients -->
-		<div class="box-inner">
-			<h2 class="title title--h3">Clients</h2>
-			
-			<div class="swiper-container js-carousel-clients">
-				<div class="swiper-wrapper">
-					<!-- Item client -->
-					<div class="swiper-slide">
-						<a href="#"><img src="https://art-template.ru/vcard1/assets/img/logo-partner-white.svg" alt="Logo" /></a>
-					</div>
-					
-					<!-- Item client -->
-					<div class="swiper-slide">
-						<a href="#"><img src="https://art-template.ru/vcard1/assets/img/logo-partner-white.svg" alt="Logo" /></a>
-					</div>
 
-					<!-- Item client -->
-					<div class="swiper-slide">
-						<a href="#"><img src="https://art-template.ru/vcard1/assets/img/logo-partner-white.svg" alt="Logo" /></a>
-					</div>
-
-					<!-- Item client -->
-					<div class="swiper-slide">
-						<a href="#"><img src="https://art-template.ru/vcard1/assets/img/logo-partner-white.svg" alt="Logo" /></a>
-					</div>
-					
-					<!-- Item client -->
-					<div class="swiper-slide">
-						<a href="#"><img src="https://art-template.ru/vcard1/assets/img/logo-partner-white.svg" alt="Logo" /></a>
-					</div>
-					
-					<!-- Item client -->
-					<div class="swiper-slide">
-						<a href="#"><img src="https://art-template.ru/vcard1/assets/img/logo-partner-white.svg" alt="Logo" /></a>
-					</div>
-				</div>
-				
-				<div class="swiper-pagination"></div>
-			</div>
-		</div>
 	</div>
 </template>
 
 <script>
 	export default {
+		head() {
+			return {
+				title: "About Me - Catur Pamungkas"
+			}
+		},
 		data() {
 			return {
 

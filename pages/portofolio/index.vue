@@ -14,9 +14,9 @@
                 <!-- Item 1 -->
                 <figure v-for="(porto, index) in listPortofolio" :key="index" class="gallery-grid__item category-concept">
                     <div class="gallery-grid__image-wrap">
-                        <img class="gallery-grid__image cover lazyload" src="/assets/img/image_01.jpg" data-zoom alt="" />
+                        <img class="gallery-grid__image cover lazyload" :src="porto.img" data-zoom alt="" />
                     </div>
-                    <figcaption class="gallery-grid__caption">
+                    <figcaption class="gallery-grid__caption"> 
                         <h4 class="title gallery-grid__title">{{ porto.title }}</h4>
                         <span class="gallery-grid__category">{{ porto.build }}</span>
                     </figcaption>
@@ -27,19 +27,24 @@
 </template>
 <script>
 export default {
+    head() {
+        return {
+            title: "Portofolio - Catur Pamungkas"
+        }
+    },
     data() {
         return {
             listPortofolio: [
-                { title: "Sewa Tanah Web (Admin)", build: "Codeigniter + RestAPI" },
-                { title: "Sewa Tanah Android (User)", build: "Android Java" },
-                { title: "Kelasku.NET Android", build: "Android Java" },
-                { title: "Catstore", build: "PHP + HTML + CSS + MYSQL" },
-                { title: "ASIK DISPERINDAG", build: "Laravel + Vue.JS" },
-                { title: "SI-LABI UPT.Lab DLH Jatim ", build: "Laravel + Vue.JS" },
-                { title: "TUKINER", build: "Laravel + Vue.JS" },
-                { title: "SIERKEL Kab. Lamongan", build: "Laravel + Vue.JS" },
-                { title: "SAKIP & LKR PU-SDA", build: "Laravel + Vue.JS" },
-                { title: "Horse Rental (Front End)", build: "Nuxt.JS + RestAPI" },
+                { img:"/assets/images/desktop.png", title: "Sewa Tanah Web (Admin)", build: "Codeigniter + RestAPI" },
+                { img:"/assets/images/smartphone.png", title: "Sewa Tanah Android (User)", build: "Android Java" },
+                { img:"/assets/images/smartphone.png", title: "Kelasku.NET Android", build: "Android Java" },
+                { img:"/assets/images/desktop.png", title: "Catstore", build: "PHP + HTML + CSS + MYSQL" },
+                { img:"/assets/images/desktop.png", title: "ASIK DISPERINDAG", build: "Laravel + Vue.JS" },
+                { img:"/assets/images/desktop.png", title: "SI-LABI UPT.Lab DLH Jatim ", build: "Laravel + Vue.JS" },
+                { img:"/assets/images/desktop.png", title: "TUKINER", build: "Laravel + Vue.JS" },
+                { img:"/assets/images/desktop.png", title: "SIERKEL Kab. Lamongan", build: "Laravel + Vue.JS" },
+                { img:"/assets/images/desktop.png", title: "SAKIP & LKR PU-SDA", build: "Laravel + Vue.JS" },
+                { img:"/assets/images/desktop.png", title: "Horse Rental (Front End)", build: "Nuxt.JS" },
             ]
         }
     },
