@@ -10,7 +10,7 @@
 		    <div class="preloader__progress"><span></span></div>
 		</div>
 	</div>
-	
+
 	<main class="main">
 	    <div class="container gutter-top">
 		    <div class="row sticky-parent">
@@ -25,16 +25,16 @@
 						<div class="text-center">
 						    <h3 class="title title--h3 sidebar__user-name"><span class="weight--500">Catur</span> Pamungkas</h3>
 							<div class="badge badge--dark">Fullstack Developer</div>
-							
+
 							<!-- Social -->
 		                    <div class="social">
 		                        <a class="social__link" href="javascript:void(0)"><i class="font-icon icon-facebook"></i></a>
 		                        <a class="social__link" href="javascript:void(0)"><i class="font-icon icon-twitter"></i></a>
-		                        <a class="social__link" href="https://www.linkedin.com/in/caturpamungkas/"><i class="font-icon icon-linkedin2"></i></a>
+		                        <a class="social__link" href="https://www.linkedin.com/in/caturpamungkas/" target="_blank"><i class="font-icon icon-linkedin2"></i></a>
 		                        <a class="social__link" href="javascript:void(0)"><i class="font-icon icon-instagram"></i></a>
 		                    </div>
 						</div>
-						
+
 						<div class="sidebar__info box-inner">
 		                    <ul class="contacts-block">
 					            <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Birthday">
@@ -47,18 +47,18 @@
 							        <a href="mailto:a.n.caturpamungkas@gmail.com"><i class="font-icon icon-envelope"></i>a.n.caturpamungkas@gmail.com</a>
 							    </li>
 						        <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Phone">
-							        <i class="font-icon icon-phone"></i>+6285*****6808
+							        <i class="font-icon icon-phone"></i>+62811***340
 							    </li>
 						        <!-- <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Skype">
 							        <a href="skype:skype-example"><i class="font-icon icon-skype"></i>Felecia_Brown</a>
 							    </li> -->
 					        </ul>
-							
+
 							<a class="btn" href="#"><i class="font-icon icon-download"></i> Download CV</a>
 						</div>
-					</div>	
+					</div>
 		        </aside>
-		        
+
 				<!-- Content -->
 		        <div class="col-12 col-md-12 col-xl-9">
 				    <div class="box shadow pb-0">
@@ -79,16 +79,16 @@
                                 <li class="nav__item"><NuxtLink to="/contact">Contact</NuxtLink></li>
                             </ul>
 						</div>
-						
+
 					    <Nuxt />
 
 					</div>
-					
+
 					<!-- Footer -->
 					<footer class="footer">© 2019 vCard</footer>
 		        </div>
 			</div>
-		</div>	
+		</div>
     </main>
 
     <div class="back-to-top"></div>
@@ -100,7 +100,7 @@
         </clipPath>
         <clipPath id="avatar-hexagon">
              <path d="M0 27.2891c0-4.6662 2.4889-8.976 6.52491-11.2986L31.308 1.72845c3.98-2.290382 8.8697-2.305446 12.8637-.03963l25.234 14.31558C73.4807 18.3162 76 22.6478 76 27.3426V56.684c0 4.6805-2.5041 9.0013-6.5597 11.3186L44.4317 82.2915c-3.9869 2.278-8.8765 2.278-12.8634 0L6.55974 68.0026C2.50414 65.6853 0 61.3645 0 56.684V27.2891z"/>
-        </clipPath>		
+        </clipPath>
     </svg>
   </div>
 </template>
@@ -118,7 +118,7 @@ export default {
 	},
 	methods: {
 		loadJS() {
-			var isMobile = false; 
+			var isMobile = false;
 			if( /Android|webOS|iPhone|iPod|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 				$('html').addClass('touch');
 				isMobile = true;
@@ -127,8 +127,8 @@ export default {
 				$('html').addClass('no-touch');
 				isMobile = false;
 			}
-			
-			
+
+
 			/*-----------------------------------------------------------------
 			Loaded
 			-------------------------------------------------------------------*/
@@ -141,13 +141,13 @@ export default {
 					progressBar(); //Init progress bar
 				}
 			});
-			
+
 			// $('body, .js-img-load').imagesLoaded({ background: !0 }).always( function( instance ) {
 			// 	preloader(); //Init preloader
 			// });
 
 			// function preloader() {
-			// 	var tl = anime.timeline({}); 
+			// 	var tl = anime.timeline({});
 			// 	tl
 			// 	.add({
 			// 		targets: '.preloader',
@@ -189,12 +189,12 @@ export default {
 				$('.inner-menu').toggleClass('is-active');
 				$('body').toggleClass('open-menu');
 			});
-			
-			
+
+
 			/*-----------------------------------------------------------------
 			Nav
 			-------------------------------------------------------------------*/
-			
+
 			var sideNavOpen = $('.hamburger');
 			var sideNavTl = anime.timeline({autoplay: false});
 
@@ -216,7 +216,7 @@ export default {
 						translateX: [70, 0],
 						easing: 'easeInOutBack'
 					},'-=500');
-				}); 
+				});
 			} else {
 				$('.js-menu').each(function(i) {
 					sideNavTl
@@ -234,9 +234,9 @@ export default {
 						translateX: [70, 0],
 						easing: 'easeInOutBack'
 					},'-=500');
-				});  
+				});
 			}
-			
+
 			$(sideNavOpen).on('click', function(e) {
 				e.preventDefault();
 				if (sideNavTl.began) {
@@ -322,7 +322,7 @@ export default {
 			/*-----------------------------------------------------------------
 			Progress bar
 			-------------------------------------------------------------------*/
-			
+
 			function progressBar() {
 				$('.progress').each(function() {
 					var ctrl = new ScrollMagic.Controller();
@@ -340,32 +340,32 @@ export default {
 					});
 				});
 			}
-			
-			
+
+
 			/*-----------------------------------------------------------------
 			Scroll indicator
 			-------------------------------------------------------------------*/
-		
+
 			function scrollIndicator() {
 				$(window).on('scroll', function() {
-					var wintop = $(window).scrollTop(), docheight = 
+					var wintop = $(window).scrollTop(), docheight =
 					$(document).height(), winheight = $(window).height();
 					var scrolled = (wintop/(docheight-winheight))*100;
 					$('.scroll-line').css('width', (scrolled + '%'));
 				});
 			}
-			
+
 			scrollIndicator(); //Init
-			
-			
+
+
 			/*-----------------------------------------------------------------
 			ScrollTo
 			-------------------------------------------------------------------*/
-			
+
 			function scrollToTop() {
 				var $backToTop = $('.back-to-top'),
 					$showBackTotop = $(window).height();
-					
+
 				$backToTop.hide();
 
 
@@ -377,29 +377,29 @@ export default {
 						$backToTop.fadeOut('slow');
 					}
 				});
-				
+
 				$backToTop.on('click', function (e) {
 					e.preventDefault();
 					$(' body, html ').animate( {scrollTop : 0}, 'slow' );
 				});
 			}
-			
+
 			scrollToTop(); //Init
 
 
 			/*-----------------------------------------------------------------
 			Style background image
-			-------------------------------------------------------------------*/	
-		
+			-------------------------------------------------------------------*/
+
 			$('.js-image').each(function(){
 				var dataImage = $(this).attr('data-image');
 				$(this).css('background-image', 'url(' + dataImage + ')');
 			});
-			
-			
+
+
 			/*-----------------------------------------------------------------
 			Autoresize textarea
-			-------------------------------------------------------------------*/	
+			-------------------------------------------------------------------*/
 
 			$('textarea').each(function(){
 				autosize(this);
@@ -408,8 +408,8 @@ export default {
 
 			/*-----------------------------------------------------------------
 			Tabs
-			-------------------------------------------------------------------*/	
-			
+			-------------------------------------------------------------------*/
+
 			$('.js-tabs').each(function(){
 				$('.content .tabcontent').hide();
 				$('.content .tabcontent:first').show();
@@ -417,7 +417,7 @@ export default {
 					$('.nav .nav__item a').removeClass('active');
 					$(this).addClass('active');
 					var currentTab = $(this).attr('href');
-					$('.content .tabcontent').hide();            
+					$('.content .tabcontent').hide();
 					$(currentTab).show();
 					$portfolioMasonry.isotope ({
 						columnWidth: '.gallery-grid__item',
@@ -427,18 +427,18 @@ export default {
 					$('.js-scroll').getNiceScroll().resize()
 					return false;
 				});
-				
+
 				// Mobile close menu
 				var screenMobile = 580;
-			
+
 				windowWidth = $(window).width();
-				if ((windowWidth < screenMobile)) {	
+				if ((windowWidth < screenMobile)) {
 					$('.nav .nav__item a').on('click', function (e) {
 						e.preventDefault();
 						$('.hamburger').removeClass('is-active');
 						$('.inner-menu').removeClass('is-active');
 						$('body').removeClass('open-menu');
-				
+
 						if (sideNavTl.began) {
 							sideNavTl.reverse()
 							sideNavTl.completed = false;
@@ -447,26 +447,26 @@ export default {
 							sideNavTl.play()
 						}
 					});
-					
+
 					// autoscroll to content
 					$(".nav__item a").click(function(e) {
 						e.preventDefault();
 						var offset = -35;
-				
+
 						$('html, body').animate({
 							scrollTop: $("#content").offset().top + offset
 						}, 0);
-					});			
+					});
 				} else {
-				
+
 				}
 			});
-			
-			
+
+
 			/*-----------------------------------------------------------------
 			Tooltip
 			-------------------------------------------------------------------*/
-			
+
 			$(function () {
 				$('[data-toggle="tooltip"]').tooltip()
 			});
@@ -474,8 +474,8 @@ export default {
 
 			/*-----------------------------------------------------------------
 			Switch categories & Filter mobile
-			-------------------------------------------------------------------*/	
-		
+			-------------------------------------------------------------------*/
+
 			$('.select').on('click','.placeholder',function(){
 			var parent = $(this).closest('.select');
 			if ( ! parent.hasClass('is-open')){
@@ -488,20 +488,20 @@ export default {
 				var parent = $(this).closest('.select');
 				parent.removeClass('is-open').find('.placeholder').text( $(this).text() );
 				parent.find('input[type=hidden]').attr('value', $(this).attr('data-value') );
-			
+
 				$('.filter__item').removeClass('active');
 				$(this).addClass('active');
 				var selector = $(this).attr('data-filter');
-				
+
 				$('.js-filter-container').isotope({
 					filter: selector
 				});
-				return false;	
+				return false;
 			});
 
 			/*-----------------------------------------------------------------
 			niceScroll
-			-------------------------------------------------------------------*/		
+			-------------------------------------------------------------------*/
 
 			$('textarea').niceScroll({
 				horizrailenabled:false
@@ -511,7 +511,7 @@ export default {
 			/*-----------------------------------------------------------------
 			emoji add in textarea
 			-------------------------------------------------------------------*/
-			
+
 			$(function() {
 				$('.emoji-wrap img').on('click', function(){
 					var emoji = $(this).attr('title');
@@ -523,26 +523,26 @@ export default {
 			/*-----------------------------------------------------------------
 			mediumZoom
 			-------------------------------------------------------------------*/
-		
+
 			mediumZoom('[data-zoom]', {
 				margin: 30
 			});
 
-			
+
 			/*-----------------------------------------------------------------
 			Lazyload
 			-------------------------------------------------------------------*/
 
 			lazySizes.init();
 
-			
+
 			/*-----------------------------------------------------------------
 			Polyfill object-fit
-			-------------------------------------------------------------------*/	
-			
+			-------------------------------------------------------------------*/
+
 			var $someImages = $('img.cover');
 			objectFitImages($someImages);
-			
+
 
 			/*-----------------------------------------------------------------
 			Contacts form
@@ -562,9 +562,9 @@ export default {
 				var name = $("#nameContact").val(),
 					email = $("#emailContact").val(),
 					message = $("#messageContact").val();
-					
+
 				var url = "assets/php/form-contact.php";
-				
+
 				$.ajax({
 					type: "POST",
 					url: url,
@@ -584,13 +584,13 @@ export default {
 				$("#contact-form")[0].reset();
 				submitMSG(true, "Thanks! Your message has been sent.");
 			}
-		
+
 			function formError(){
 				$("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 					$(this).removeClass();
 				});
-			}  
-		
+			}
+
 			function submitMSG(valid, msg){
 				var msgClasses;
 				if(valid){
