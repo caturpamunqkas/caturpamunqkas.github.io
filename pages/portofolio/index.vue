@@ -43,7 +43,7 @@ export default {
                 { img:"/assets/images/portofolio/silabi.png", url: "http://silabi.dlh.jatimprov.go.id/", title: "SI-LABI UPT.Lab DLH Jatim ", build: "Laravel + Vue.JS" },
                 { img:"/assets/images/desktop.png", title: "TUKINER", build: "Laravel + Vue.JS" },
                 { img:"/assets/images/portofolio/CTS.png", title: "Consolidated Ticketing System", build: "Enggano Platform (Custom) + Ext.JS" },
-                { img:"/assets/images/desktop.png", title: "SAKIP & LKR PU-SDA", build: "Laravel + Vue.JS" },
+                { img:"/assets/images/portofolio/PUSDA.png", url: "https://lkr.esakip.net/", title: "SAKIP & LKR PU-SDA", build: "Laravel + Vue.JS" },
             ]
         }
     },

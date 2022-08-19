@@ -7,7 +7,7 @@
 				Saya Achmad Novanto Catur Pamungkas, sudah menekuni di bidang Fullstack Developer selama 3 Tahun. Sejak tahun 2019 hingga sekarang, untuk project yang sering saya kerjakan yaitu Web Application menggunakan Framework Laravel, Codeigniter. Untuk Front-End menggunakan Vue.JS, Nuxt.JS, Ext.JS & cukup familiar dengan NodeJS maupun Typescript.
 			</p>
 			<p>
-        Untuk Mobile Development, saya cukup mahir di Android Java (basic) dan Flutter. Saya tipikal orang yang senang untuk mempelajari hal - hal baru, mampu bersosialisasi dengan baik, dan juga mampu bekerja dibawah tekanan.
+        Untuk Mobile Development, saya cukup mahir di Android Java (basic) dan Flutter. Saya tipikal orang yang senang untuk mempelajari hal - hal baru, mampu bersosialisasi dengan baik, dan juga mampu bekerja dibawah tekanan. Terampil dalam mengoperasikan berbagai platform, memiliki kemampuan komunikasi lisan dan verbal yang baik, dan mampu menjelaskan masalah software yang kompleks dalam istilah yang mudah dipahami.
 			</p>
 		</div>
 

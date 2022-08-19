@@ -54,7 +54,7 @@
 							    </li> -->
 					        </ul>
 
-							<a class="btn" href="#"><i class="font-icon icon-download"></i> Download CV</a>
+<!--							<a class="btn" href="#"><i class="font-icon icon-download"></i> Download CV</a>-->
 						</div>
 					</div>
 		        </aside>
