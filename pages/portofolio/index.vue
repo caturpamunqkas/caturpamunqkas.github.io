@@ -16,8 +16,8 @@
                     <div class="gallery-grid__image-wrap">
                         <img class="gallery-grid__image cover lazyload" :src="porto.img" data-zoom alt="" />
                     </div>
-                    <figcaption class="gallery-grid__caption"> 
-                        <h4 class="title gallery-grid__title">{{ porto.title }}</h4>
+                    <figcaption class="gallery-grid__caption">
+                      <h4 class="title gallery-grid__title"><a :href="porto.url" target="_blank">{{ porto.title }}</a></h4>
                         <span class="gallery-grid__category">{{ porto.build }}</span>
                     </figcaption>
                 </figure>
@@ -35,16 +35,15 @@ export default {
     data() {
         return {
             listPortofolio: [
-                { img:"/assets/images/desktop.png", title: "Sewa Tanah Web (Admin)", build: "Codeigniter + RestAPI" },
-                { img:"/assets/images/smartphone.png", title: "Sewa Tanah Android (User)", build: "Android Java" },
-                { img:"/assets/images/smartphone.png", title: "Kelasku.NET Android", build: "Android Java" },
-                { img:"/assets/images/desktop.png", title: "Catstore", build: "PHP + HTML + CSS + MYSQL" },
+                { img:"/assets/images/desktop.png", url: "https://gitlab.com/caturpamunqkas/sewatanah_web", title: "Sewa Tanah Web (Admin)", build: "Codeigniter + RestAPI" },
+                { img:"/assets/images/smartphone.png", url: "https://gitlab.com/caturpamunqkas/sewatanah_app", title: "Sewa Tanah Android (User)", build: "Android Java" },
+                { img:"/assets/images/smartphone.png", url: "https://gitlab.com/caturpamunqkas/kelasku", title: "Kelasku.NET Android", build: "Android Java" },
+                { img:"/assets/images/desktop.png", url: "https://gitlab.com/caturpamunqkas/catstore", title: "Catstore", build: "PHP + HTML + CSS + MYSQL" },
                 { img:"/assets/images/desktop.png", title: "ASIK DISPERINDAG", build: "Laravel + Vue.JS" },
-                { img:"/assets/images/desktop.png", title: "SI-LABI UPT.Lab DLH Jatim ", build: "Laravel + Vue.JS" },
+                { img:"/assets/images/portofolio/silabi.png", url: "http://silabi.dlh.jatimprov.go.id/", title: "SI-LABI UPT.Lab DLH Jatim ", build: "Laravel + Vue.JS" },
                 { img:"/assets/images/desktop.png", title: "TUKINER", build: "Laravel + Vue.JS" },
                 { img:"/assets/images/desktop.png", title: "SIERKEL Kab. Lamongan", build: "Laravel + Vue.JS" },
                 { img:"/assets/images/desktop.png", title: "SAKIP & LKR PU-SDA", build: "Laravel + Vue.JS" },
-                { img:"/assets/images/desktop.png", title: "Horse Rental (Front End)", build: "Nuxt.JS" },
             ]
         }
     },
@@ -52,8 +51,8 @@ export default {
         loadJS() {
             /*-----------------------------------------------------------------
 			Masonry
-			-------------------------------------------------------------------*/	
-			
+			-------------------------------------------------------------------*/
+
 			// Portfolio
 			var $portfolioMasonry = $('.js-masonry').isotope({
 				itemSelector: '.gallery-grid__item',
@@ -70,14 +69,14 @@ export default {
 				},
 				fitRows: {
 					gutter: '.gutter-sizer'
-				},	
+				},
 				masonry: {
 					columnWidth: '.gallery-grid__item',
 					gutter: '.gutter-sizer',
 					isAnimated: true
 				}
 			});
-		
+
 			$portfolioMasonry.imagesLoaded().progress( function() {
 				$portfolioMasonry.isotope ({
 					columnWidth: '.gallery-grid__item',
@@ -88,9 +87,9 @@ export default {
 						gutter: '.gutter-sizer'
 					}
 				});
-			});	
+			});
 
-			
+
         }
     },
     mounted() {
